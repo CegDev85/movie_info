@@ -1,14 +1,19 @@
-
+// import logo from '../public'
 import './App.css';
 import MovieContainer from './Containers/MovieContainer';
 
 function App() {
   return (
-    <div className="App">
+    <body>
+      <div className="App">
       
-      <MovieContainer />
 
-    </div>
+        {/* <img src="/background.png"/>  */}
+      
+        <MovieContainer  />
+
+      </div>
+    </body>
   );
 }
 

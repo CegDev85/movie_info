@@ -15,6 +15,7 @@ const MovieDetail = ({movie}) => {
         <div className="movie-detail">
             <h2>{movie.title}</h2>
             <h3>{movie.original_title}</h3>
+            <a href={movie.url}>Click to learn more</a>
 
         </div>
     )

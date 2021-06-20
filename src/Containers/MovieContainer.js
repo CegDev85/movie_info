@@ -4,6 +4,7 @@ import MovieDetail from '../Components/MovieDetail';
 import MovieSelect from '../Components/MovieSelect';
 
 
+
 const MovieContainer = () => {
 
     const [movies, setMovies] = useState([]);
