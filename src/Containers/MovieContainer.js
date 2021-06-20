@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react' 
 import MovieList from '../Components/MovieList'
 import MovieDetail from '../Components/MovieDetail';
+import MovieSelect from '../Components/MovieSelect';
 
 
 const MovieContainer = () => {
@@ -27,11 +28,13 @@ const MovieContainer = () => {
     return (
         <div className="movie-container">
             <h1>Studio Ghibli API</h1>
-            <MovieList movies={movies} onSelectedMovie={handleSelectedMovie} />
+            {/* <MovieList movies={movies} onSelectedMovie={handleSelectedMovie} /> */}
+            <MovieSelect movies={movies} movieSelected={handleSelectedMovie}/>
             <MovieDetail movie={selectedMovie}/>
         </div>
     )
-}
+    
+    }
 
 
 
